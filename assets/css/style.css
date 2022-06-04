@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/frost.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 header {
     padding: 20px 35px;
     display: flex;
@@ -36,15 +43,32 @@ header nav ul li a {
     font-style: normal;
     font-weight: 200px;
     background-color: darkmagenta;
+    border-radius: 15px;
 }
 
-body {
-        background-image: url('../images/frost.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+header nav ul li a:hover {
+    color: gray;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
-.about_me {
+.outside {
+    border-color: chartreuse;
+    border-style: double;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.outside h2 {
+    color:darkmagenta;
+    background-color: cadetblue;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.about-me {
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
@@ -52,35 +76,18 @@ body {
     text-align: center;
 }
 
-.recent_work{
-   width: 410px;
+.recent-work{
+   height: 300px;
+   width: 300px;
    background-image: url('../images/recent.jpg');
    background-size: contain;
    background-repeat: no-repeat;
+   opacity: calc(80%);
    border: darkmagenta;
    border-style: solid;
    border-width: thick;
    display: inline-block;
    vertical-align: top;
    text-align: center;
-}
-
-.recent h4 {
-    font-size: small;
-    border: 3px solid;
-    background-color: darkmagenta;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 10%;
-}
-
-.work_box_small {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+   flex-grow: 1 1 1;
 }
