@@ -1,27 +1,68 @@
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-image: url("../images/pink_bar.jpg");
+    background-size: cover;
+    background-position: 80%;
+    image-rendering: auto;
+  }
+
 header h1{
     font-weight: bolder;
-    font-size: 3vw:
-    color: slategrey;
+    font-size: 5vw;
+    color: grey;
 
+}
+
+header nav {
+    margin: auto;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
-    padding: 10%;
-    font-weight: lighter;
-    font-size: 1vw;
+    padding: 10px;
+    font-size: small;
+    font-style: normal;
+    font-weight: 200px;
+    background-color: darkmagenta;
+}
+
+body {
+        background-image: url('../images/frost.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .about_me {
-    background-image: url('../images/frost.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    border: darkmagenta;
+    border-style: solid;
+    border-width: thick;
+    vertical-align: top;
+    text-align: center;
 }
 
 .recent_work{
-    width: 50%;
-    background-image: url('../images/recent.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+   width: 410px;
+   background-image: url('../images/recent.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   border: darkmagenta;
+   border-style: solid;
+   border-width: thick;
+   display: inline-block;
+   vertical-align: top;
+   text-align: center;
 }
 
 .recent h4 {
