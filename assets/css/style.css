@@ -1,0 +1,36 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: lightpink;
+}
+
+header h1{
+    font-weight: bolder;
+    font-size: 3vw:
+    color: slategrey;
+
+}
+
+header nav ul li a {
+    font-weight: lighter;
+    font-size: 1vw;
+}
+
+.box_label {
+    font-size: 30px;
+    border: 3px solid;
+    background-color: darkmagenta;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.work_box_small {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
