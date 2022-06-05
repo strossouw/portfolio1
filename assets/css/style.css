@@ -49,7 +49,6 @@ header nav ul li a {
 header nav ul li a:hover {
     color: gray;
     border-radius: 15px;
-    text-shadow: none;
 }
 
 .outside {
@@ -82,17 +81,39 @@ header nav ul li a:hover {
 }
 
 .recent-work{
-   height: 300px;
+   height: 250px;
    width: 300px;
    background-image: url('../images/recent.jpg');
    background-size: contain;
    background-repeat: no-repeat;
-   opacity: calc(80%);
+   opacity: calc(65%);
    border: darkmagenta;
    border-style: solid;
    border-width: thick;
    display: inline-block;
    vertical-align: top;
    text-align: center;
-   flex-grow: 1 1 1;
+}
+
+.recent-work:hover {
+    opacity: calc(100%);
+    border-color: chartreuse;
+}
+
+.recent-work h4 {
+    color: darkmagenta;
+    background-color: cadetblue;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.work-card {
+    background-image: url('../images/recent.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: calc(65%);
+    border: darkmagenta;
+    border-style: solid;
+    border-width: thick;
 }
