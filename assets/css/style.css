@@ -7,10 +7,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    top: 0;
     background-image: url("../images/pink_bar.jpg");
     background-size: cover;
-    background-position: 80%;
     image-rendering: auto;
   }
 
@@ -45,18 +43,24 @@ header nav ul li a {
 header nav ul li a:hover {
     color: gray;
     border-radius: 15px;
+    border-color: chartreuse;
 }
 
 .outside {
+    display: flex;
     border-color: chartreuse;
     border-style: double;
-    display: flex;
     background-image: url('../images/frost.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.outside h2 {
+.outside > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.outside h2 { /*text*/
     color:darkmagenta;
     background-color: cadetblue;
     margin: 10px;
@@ -64,46 +68,43 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.about-me {
+.about-me { /*box*/
+    display: flex;
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
-    vertical-align: top;
-    text-align: center;
-}
-
-.profile {
-    height: 100;
-    width: 150;
-    justify-content: space-between;
     flex-wrap: wrap;
-    display: flex;
-    flex: 1 50% .5;
 }
 
-.work {
+.profile { /*picture*/
+    height: 400px;
+    width: 50%;
+    float: right;
+}
+
+.work { /*box*/
+    height: 400px;
+    width: 50%;
     border: darkmagenta;
-   border-style: solid;
-   border-width: thick;
-   justify-content: space-between;
-   flex-wrap: wrap;
+    border-style: solid;
+    border-width: thick;
+    display: block;
 }
 
-.recent-work{
-   background-image: url('../images/recent.jpg');
-   background-size: contain;
-   background-repeat: no-repeat;
-   opacity: calc(65%);
-   border: darkmagenta;
-   border-style: solid;
-   border-width: thick;
-   vertical-align: top;
-   text-align: center;
-   justify-content: space-between;
-   flex-wrap: wrap;
+.recent-work{  /*box*/
+    size: 50%;
+    background-image: url('../images/recent.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: calc(65%);
+    border: darkmagenta;
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.recent-work:hover {
+.recent-work:hover {  /*box- action*/
     opacity: calc(100%);
     border-color: chartreuse;
 }
@@ -117,6 +118,7 @@ header nav ul li a:hover {
 }
 
 .work-card {
+    width: 33%;
     background-image: url('../images/recent.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -125,3 +127,6 @@ header nav ul li a:hover {
     border-style: solid;
     border-width: thick;
 }
+
+
+
