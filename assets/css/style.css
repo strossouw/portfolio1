@@ -76,6 +76,11 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+.profile {
+    display: flex;
+    flex: 1 50% .5;
+}
+
 .recent-work{
    height: 300px;
    width: 300px;
