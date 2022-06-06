@@ -39,10 +39,10 @@ header nav ul li a {
     border-radius: 15px;
 }
 
-header nav ul li:hover {
+header nav ul li a:hover {
     color: gray;
     border-radius: 15px;
-    border-color: chartreuse;
+    background-color: chartreuse;
 }
 
 .outside {
@@ -73,9 +73,10 @@ header nav ul li:hover {
     border-width: thick;
 }
 
-.profile { /*picture*/
+.profile img { /*picture*/
     height: 50%;
     width: 50%;
+    float: right;
 }
 
 .work { /*box*/
@@ -98,6 +99,8 @@ header nav ul li:hover {
 
 .recent-work img {  /*box*/
     flex: 1 1 auto;
+    height: 50%;
+    width: 100%;
 }
 
 .recent-work:hover {  /*box- action*/
@@ -107,22 +110,23 @@ header nav ul li:hover {
 
 .recent-work h4 {
     color: darkmagenta;
-    background-color: cadetblue;
-    margin: 10px;
-    border-radius: 15px;
-    text-align: center;
 }
 
 .work-card {
     width: 33%;
-    height: 100%;
-    background-image: url('../images/recent.jpg');
-    background-size: contain;
+    height: 50%;
+    background-image: url('https://img.icons8.com/stickers/344/under-construction.png');
+    background-size: cover;
     background-repeat: no-repeat;
     opacity: calc(65%);
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
+}
+
+.work-card:hover {
+    opacity: calc(100%);
+    border-color: chartreuse;
 }
 
 .contact-me {
