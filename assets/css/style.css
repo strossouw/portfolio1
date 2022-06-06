@@ -9,7 +9,6 @@ header {
     flex-wrap: wrap;
     background-image: url("../images/pink_bar.jpg");
     background-size: cover;
-    image-rendering: auto;
   }
 
 header h1{
@@ -40,7 +39,7 @@ header nav ul li a {
     border-radius: 15px;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
     color: gray;
     border-radius: 15px;
     border-color: chartreuse;
@@ -69,39 +68,36 @@ header nav ul li a:hover {
 }
 
 .about-me { /*box*/
-    display: flex;
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
-    flex-wrap: wrap;
 }
 
 .profile { /*picture*/
-    height: 400px;
+    height: 50%;
     width: 50%;
-    float: right;
 }
 
 .work { /*box*/
-    height: 400px;
     width: 50%;
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
     display: block;
+    padding: 10px;
 }
 
-.recent-work{  /*box*/
-    size: 50%;
-    background-image: url('../images/recent.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+.recent-work {  /*box*/
+    height: 50%;
     opacity: calc(65%);
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
     text-align: center;
-    justify-content: space-between;
+}
+
+.recent-work img {  /*box*/
+    flex: 1 1 auto;
 }
 
 .recent-work:hover {  /*box- action*/
@@ -119,6 +115,7 @@ header nav ul li a:hover {
 
 .work-card {
     width: 33%;
+    height: 100%;
     background-image: url('../images/recent.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -127,6 +124,26 @@ header nav ul li a:hover {
     border-style: solid;
     border-width: thick;
 }
+
+.contact-me {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/pink_bar.jpg");
+    background-size: cover;
+}
+
+.contact-me h3 {
+    font-weight: bolder;
+    font-size: 5vw;
+    color: grey;
+}
+
+.contact-me img {
+    height: 50px;
+}
+
 
 
 
