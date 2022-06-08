@@ -19,6 +19,7 @@ header h1{
 header nav ul a {
     background-color: darkmagenta;
     border-radius: 15px;
+    font-size: 2.5vw;
 }
 
 header nav ul a {
@@ -44,6 +45,7 @@ header nav ul a:hover {
     margin: 10px;
     border-radius: 15px;
     text-align: center;
+    font-size: 3vw;
 }
 
 .about-me { /*box*/
@@ -147,6 +149,60 @@ header nav ul a:hover {
     height: 50px;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul a {
+      font-size: 20px;
+    }
+    
+    .outside h2 { /*text*/
+        font-size: 20px;
+    }
+    
+    .about-me { /*box*/
+        border: darkmagenta;
+        border-style: solid;
+        border-width: thin;
+    }
 
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .outside {
+        border: thin;
+    }
 
+    .about-me {
+        background-color: antiquewhite;
+        background-image: none;    }
+ }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .header {
+        background-image: none;
+    }
+    
+    .work {
+        display: block;
+        }
 
+  }
+}
