@@ -15,7 +15,6 @@ header h1{
     font-weight: bolder;
     font-size: 5vw;
     color: grey;
-
 }
 
 header nav {
@@ -115,13 +114,22 @@ header nav ul li a:hover {
 .work-card {
     width: 33%;
     height: 50%;
-    background-image: url('https://img.icons8.com/stickers/344/under-construction.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: antiquewhite;
     opacity: calc(65%);
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
+    display: inline-block;
+}
+
+.work-card img{
+    width: 100%;
+}
+
+.work-card h5 {
+    background-color: darkmagenta;
+    text-align: center;
+    padding: 30px;
 }
 
 .work-card:hover {
