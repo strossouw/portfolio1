@@ -5,10 +5,9 @@ body {
 header {
     padding: 20px 35px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background-image: url("../images/pink_bar.jpg");
     background-size: cover;
+    justify-content: space-between;
   }
 
 header h1{
@@ -17,28 +16,18 @@ header h1{
     color: grey;
 }
 
-header nav {
-    margin: auto;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px;
-    font-size: small;
-    font-style: normal;
-    font-weight: 200px;
+header nav ul a {
     background-color: darkmagenta;
     border-radius: 15px;
 }
 
-header nav ul li a:hover {
+header nav ul a {
+    flex-wrap: wrap;
+    color: darkgrey;
+    list-style: none;
+}
+
+header nav ul a:hover {
     color: gray;
     border-radius: 15px;
     background-color: chartreuse;
@@ -46,16 +35,7 @@ header nav ul li a:hover {
 
 .outside {
     display: flex;
-    border-color: chartreuse;
-    border-style: double;
-    background-image: url('../images/frost.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.outside > * {
-    flex: 1;
-    margin: 15px;
+    background-color: rgb(182, 133, 166);
 }
 
 .outside h2 { /*text*/
@@ -67,59 +47,69 @@ header nav ul li a:hover {
 }
 
 .about-me { /*box*/
+    width: 75%;
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
+    background-image: url("../images/frost.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .profile img { /*picture*/
-    height: 50%;
-    width: 50%;
+    width: 30%;
     float: right;
+    flex: 1 1;
 }
 
 .work { /*box*/
-    width: 50%;
+    width: 25%;
     border: darkmagenta;
     border-style: solid;
     border-width: thick;
-    display: block;
-    padding: 10px;
 }
 
 .recent-work {  /*box*/
     height: 50%;
     opacity: calc(65%);
-    border: darkmagenta;
-    border-style: solid;
-    border-width: thick;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 .recent-work img {  /*box*/
-    flex: 1 1 auto;
     height: 50%;
     width: 100%;
+    flex: 1 1;
+
 }
 
 .recent-work:hover {  /*box- action*/
     opacity: calc(100%);
     border-color: chartreuse;
+    border-width: thick;
+    border-style: solid;
 }
 
-.recent-work h4 {
+.recent-work h3 {
     color: darkmagenta;
+    flex: 1 1;
+    text-align: center;
+}
+
+.card-section {
+    display: flex;
 }
 
 .work-card {
-    width: 33%;
-    height: 50%;
+    width: 30%;
+    padding: auto;
+    margin: auto;
     background-color: antiquewhite;
     opacity: calc(65%);
     border: darkmagenta;
     border-style: solid;
-    border-width: thick;
-    display: inline-block;
+    border-width: thin;
+    flex-wrap: wrap;
 }
 
 .work-card img{
@@ -135,13 +125,14 @@ header nav ul li a:hover {
 .work-card:hover {
     opacity: calc(100%);
     border-color: chartreuse;
+    border-style: solid;
+    border-width: thick;
 }
 
 .contact-me {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-image: url("../images/pink_bar.jpg");
     background-size: cover;
 }
